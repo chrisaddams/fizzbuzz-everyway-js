@@ -1,6 +1,5 @@
 module.exports = {
   fizzyElse: function() {
-    console.time("fizzy");
     let i = 0;
     for (i; i <= 10000; i++) {
       if (i % 15 == 0) {
@@ -9,10 +8,13 @@ module.exports = {
         console.log("fizz");
       } else if (i % 5 == 0) {
         console.log("buzz");
+      } else if (i % 7 == 0) {
+        console.log("bang");
+      } else if (i % 9 == 0) {
+        console.log("wizz");
       } else {
         console.log(i);
       }
     }
-    console.timeEnd("fizzy");
   }
 };

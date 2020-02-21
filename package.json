@@ -8,5 +8,9 @@
     "start": "node start.js"
   },
   "author": "Chris Addams",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "line-reader": "^0.4.0",
+    "n-readlines": "^1.0.0"
+  }
 }

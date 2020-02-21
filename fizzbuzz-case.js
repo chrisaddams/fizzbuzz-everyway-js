@@ -1,6 +1,5 @@
 module.exports = {
   fizzyCase: function() {
-    console.time("fizzycase");
     let i = 0;
     for (i; i <= 10000; i++) {
       switch (true) {
@@ -13,12 +12,16 @@ module.exports = {
         case i % 5 == 0:
           console.log("buzz");
           break;
+        case i % 7 == 0:
+          console.log("bang");
+          break;
+        case i % 9 == 0:
+          console.log("wizz");
+          break;
         default:
           console.log(i);
           break;
       }
     }
-    console.timeEnd("fizzycase");
   }
-  //return fizzycase();
 };
